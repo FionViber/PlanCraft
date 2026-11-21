@@ -220,6 +220,11 @@ button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visi
   #layers{flex-basis:100%}
   header .menu-pop{position:fixed;right:8px;top:12px;max-height:80dvh;overflow:auto}
   #hint3d{white-space:normal;max-width:95%;width:max-content;text-align:center}
+  header .grp:not(#viewSeg){background:var(--panel);border-color:var(--line)}
+  header .grp:not(#viewSeg) .btn{color:var(--ink);background:var(--surface);border:1px solid var(--line)}
+  header .grp:not(#viewSeg) .btn:hover,
+  header .grp:not(#viewSeg) .btn:focus-visible{background:var(--pale);color:var(--navy)}
+  #viewSeg .btn{min-height:36px}
 }
 </style>
 <!-- Blue-Gray theme: presentation-only; original scripts and project content retained. -->
