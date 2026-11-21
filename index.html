@@ -27,7 +27,7 @@ input{-webkit-user-select:text;user-select:text}
 header{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;padding:8px 14px;
   background:var(--panel);border-bottom:1px solid var(--line)}
 .brand{display:flex;flex-direction:column;margin-right:8px;line-height:1.25}
-.brand b{font-size:15px;letter-spacing:.5px}
+.brand h1{margin:0;font-size:15px;letter-spacing:.5px}
 .brand span{color:var(--muted);font-size:12px}
 .grp{display:flex;align-items:center;gap:2px;padding:2px;border:1px solid var(--line);border-radius:0;background:#fff}
 .btn{border:0;background:transparent;padding:5px 9px;border-radius:0;cursor:pointer;white-space:nowrap}
@@ -212,7 +212,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visi
 @media(max-width:600px){
   header{gap:4px;padding:6px 8px;max-height:38dvh;overflow-y:auto;align-content:start}
   header .brand{order:-1;flex-basis:100%;padding:2px 0}
-  header .brand b{font-size:13px}
+  header .brand h1{margin:0;font-size:13px}
   header .grp{max-width:100%;overflow-x:auto;flex-shrink:0}
   header .btn{padding:7px 8px;min-height:34px}
   #viewSeg .btn,#viewSeg .pill{width:78px}
@@ -254,10 +254,10 @@ button.primary,.btn.primary{background:var(--blue);border-color:var(--blue);colo
 button.danger,.btn.danger{color:var(--heading);text-decoration:underline;text-underline-offset:3px}
 dialog{background:var(--white);border:1px solid var(--line);box-shadow:0 16px 48px #152e4826}dialog::backdrop{background:#152e4866}
 
-html,body{font-size:14px;line-height:1.6}.app{grid-template-rows:auto minmax(0,1fr) 34px}header{border-top:4px solid var(--blue);padding:12px 16px;gap:8px;background:var(--white)}.brand{order:-1;margin-right:16px}.brand b{font-size:18px;color:var(--navy);font-weight:700;letter-spacing:0}.brand span{font-size:12px}.grp{background:var(--wash);border-color:var(--line);gap:2px}.btn{font-size:13px;padding:8px 10px;min-height:var(--target-size);min-width:var(--target-size)}.btn:hover{background:var(--pale)}.btn.on{background:var(--blue);color:white}.btn.chip.on{background:var(--pale);color:var(--blue);box-shadow:inset 0 -2px var(--blue);font-weight:600}.seg .pill{background:var(--blue);box-shadow:none}.seg .btn:hover{background:transparent}.seg .btn[data-view="2d"],body.m3d .seg .btn[data-view="3d"]{color:white}body.m3d .seg .btn[data-view="2d"]{color:var(--ink)}
+html,body{font-size:14px;line-height:1.6}.app{grid-template-rows:auto minmax(0,1fr) 34px}header{border-top:4px solid var(--blue);padding:12px 16px;gap:8px;background:var(--white)}.brand{order:-1;margin-right:16px}.brand h1{margin:0;font-size:18px;color:var(--navy);font-weight:700;letter-spacing:0}.brand span{font-size:12px}.grp{background:var(--wash);border-color:var(--line);gap:2px}.btn{font-size:13px;padding:8px 10px;min-height:var(--target-size);min-width:var(--target-size)}.btn:hover{background:var(--pale)}.btn.on{background:var(--blue);color:white}.btn.chip.on{background:var(--pale);color:var(--blue);box-shadow:inset 0 -2px var(--blue);font-weight:600}.seg .pill{background:var(--blue);box-shadow:none}.seg .btn:hover{background:transparent}.seg .btn[data-view="2d"],body.m3d .seg .btn[data-view="3d"]{color:white}body.m3d .seg .btn[data-view="2d"]{color:var(--ink)}
 .lib h4{font-size:13px;letter-spacing:0;color:var(--heading);padding:16px 14px 10px}.lib-grid{gap:8px;padding:0 12px 12px}.item{padding:12px 4px 10px;gap:4px}.item b{font-weight:600;font-size:13px}.item small{font-size:12px}.hint{font-size:13px;line-height:1.7}.item:hover{transform:none}#panel section{padding:16px;border-color:var(--line)}#panel h3{font-size:15px;font-weight:700;color:var(--heading);margin-bottom:12px}.form{gap:12px}.form label{font-size:13px}.form input,.form select{min-height:var(--target-size);border-color:#91aabd}.form input[type=color]{height:44px}.actions .btn{font-size:13px}.stats div{background:var(--wash);border:1px solid var(--line);padding:12px}.stats small{font-size:12px}.big{font-weight:700;color:var(--navy)}td{padding:8px 2px;border-color:var(--soft)}tr.click:hover td{background:var(--wash)}.total b{color:var(--blue)}.mat{padding:10px 8px}.mat.on{border-color:var(--blue);box-shadow:inset 0 0 0 1px var(--blue)}.mat span{font-size:13px}.kbd{font-size:12px}kbd{background:var(--wash)}
 .scalebar,.rlabel,#fab{background:#fffffff2;border-color:var(--line);box-shadow:none}.rlabel{color:var(--ink)}.modehint,#hint3d,#toast{background:var(--navy);color:white}footer{background:var(--wash);font-size:12px;gap:14px}.menu-pop{box-shadow:0 8px 24px #152e4826;border-color:var(--line)}#roomList button{padding:10px;font-size:13px}#roomList button.on{background:var(--pale);color:var(--blue)}.range{font-size:13px}.range input{accent-color:var(--blue)}#fab{max-width:calc(100% - 16px);flex-wrap:wrap;justify-content:center}#fab .btn{min-height:var(--target-size);padding:8px}#fab .name{max-width:8em}.scalebar,.modehint,#hint3d,.rlabel,#toast,.menu-pop,#fab,.item,.mat,.stats div,.grp,.seg .pill{border-radius:0; input mapping is unchanged. */
-#joy,#joy i{border-radius:0;gap:6px;max-height:38dvh}.brand b,header .brand b{font-size:16px}.brand{margin-right:0}header .btn{min-height:var(--target-size);padding:8px}.lib-grid{gap:6px}.item b{font-size:12px}#fab .name{flex-basis:100%;max-width:100%;text-align:center}.scalebar{font-size:11px}footer{font-size:11px;gap:10px;padding-inline:8px}}
+#joy,#joy i{border-radius:0;gap:6px;max-height:38dvh}.brand h1,header .brand h1{margin:0;font-size:16px}.brand{margin-right:0}header .btn{min-height:var(--target-size);padding:8px}.lib-grid{gap:6px}.item b{font-size:12px}#fab .name{flex-basis:100%;max-width:100%;text-align:center}.scalebar{font-size:11px}footer{font-size:11px;gap:10px;padding-inline:8px}}
 
 /* Keep component corners consistent even when legacy selectors are more specific. */
 *,*::before,*::after{border-radius:0; the drawing and simulation surfaces keep their own geometry. */
@@ -289,7 +289,7 @@ input::-webkit-slider-thumb,input::-webkit-slider-runnable-track,input::-webkit-
       <button class="btn chip" id="tgLib" data-en="◧ Library">◧ 家具库</button>
       <button class="btn chip" id="tgPanel" data-en="Properties ◨">属性 ◨</button>
     </div>
-    <div class="brand"><b data-en="3BR 2LR 2BA · Interior Design">三室两厅两卫 · 装修设计</b><span id="subtitle">原始户型 1:60 · 尺寸单位 mm</span></div>
+    <div class="brand"><h1 data-en="3BR 2LR 2BA · Interior Design">三室两厅两卫 · 装修设计</h1><span id="subtitle">原始户型 1:60 · 尺寸单位 mm</span></div>
     <div class="grp seg" id="viewSeg" title="切换 2D / 3D (T)" data-en-title="Switch 2D / 3D (T)">
       <span class="pill"></span>
       <button class="btn" data-view="2d" data-en="2D Plan">2D 平面</button>
